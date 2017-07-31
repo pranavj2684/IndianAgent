@@ -1,0 +1,104 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="12dp"
+    tools:context="in.itechvalley.indianagent.Fragments.AadhaarPanFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/instructionHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:maxLines="2"
+        android:fontFamily="sans-serif"
+        android:text="@string/instruct_link_aadharpan"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#EA2E6E"/>
+
+    <TextView
+        android:id="@+id/instruction_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/instruct_1"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+    <TextView
+        android:id="@+id/instruction_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/instruct_2"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+    <TextView
+        android:id="@+id/instruction_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/instruct_3"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+    <TextView
+        android:id="@+id/instruction_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/instruct_4"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+<View
+    android:background="#EA2E6E"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="2dp"/>
+
+
+    <TextView
+        android:id="@+id/note_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note:"
+        android:textColor="#E92568"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+    <TextView
+        android:id="@+id/note_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/note_1"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+        android:id="@+id/note_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/note_2"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+        android:id="@+id/note_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/note_3"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+    <Button
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E91E63"
+        android:text="Proceed to Website"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@drawable/open_in_new"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+</LinearLayout>
+
+</ScrollView>

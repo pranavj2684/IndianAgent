@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardDownloadAadhaar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="5dp"
+            app:contentPadding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+               <RelativeLayout
+                   android:id="@+id/imgDownload"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   >
+                   <ImageView
+                       android:layout_width="60dp"
+                       android:layout_height="60dp"
+                       android:src="@drawable/circle"
+                       android:scaleType="centerCrop"
+                       android:contentDescription="@string/download_aadhaar_card"/>
+                   <ImageView
+                       android:id="@+id/upperImageView"
+                       android:layout_width="30dp"
+                       android:layout_height="30dp"
+                       android:src="@drawable/download"
+                       android:layout_centerInParent="true" />
+
+               </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/txtView_Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:maxLines="1"
+                        android:text="@string/download_aadhaar_card"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textColor="#88000000" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/txtView_Subtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:maxLines="2"
+                        android:layout_marginTop="4dp"
+                        android:layout_below="@id/txtView_Title"
+                        android:text="@string/aadhaar_subtitle"
+                        app:autoSizeTextType="uniform"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/cardApplyAadhaar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--app:cardCornerRadius="4dp"-->
+        <!--app:cardElevation="5dp"-->
+        <!--app:contentPadding="10dp">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/imgNewAadhaar"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--&gt;-->
+                <!--<ImageView-->
+                    <!--android:layout_width="60dp"-->
+                    <!--android:layout_height="60dp"-->
+                    <!--android:src="@drawable/circle"-->
+                    <!--android:scaleType="centerCrop"/>-->
+                <!--<ImageView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:src="@drawable/open_in_new"-->
+                    <!--android:layout_centerInParent="true" />-->
+
+            <!--</RelativeLayout>-->
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/txtView_Apply_Aadhaar_Title"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="left"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:text="@string/apply_new_aadhaar_card"-->
+                    <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"-->
+                    <!--android:textColor="#88000000"-->
+                    <!--/>-->
+
+                <!--<android.support.v7.widget.AppCompatTextView-->
+                    <!--android:id="@+id/txtView_Apply_Aadhaar_SubTitle"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:maxLines="2"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:layout_below="@id/txtView_Apply_Aadhaar_Title"-->
+                    <!--android:text="@string/apply_new_aadhaar_subtitle"-->
+                    <!--app:autoSizeTextType="uniform"-->
+                    <!--/>-->
+
+            <!--</RelativeLayout>-->
+
+        <!--</LinearLayout>-->
+
+    <!--</android.support.v7.widget.CardView>-->
+
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/cardCheckAadhaar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--app:cardCornerRadius="4dp"-->
+        <!--app:cardElevation="5dp"-->
+        <!--app:contentPadding="10dp">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/imgCheckStatus"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+                        <!--<ImageView-->
+                        <!--android:layout_width="60dp"-->
+                        <!--android:layout_height="60dp"-->
+                        <!--android:src="@drawable/circle"-->
+                        <!--android:scaleType="centerCrop"/>-->
+                        <!--<ImageView-->
+                        <!--android:layout_width="30dp"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:src="@drawable/account_card_details"-->
+                        <!--android:layout_centerInParent="true" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/txtView_CheckAadhaar_Title"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="left"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:text="@string/check_aadhaar_status"-->
+                    <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"-->
+                    <!--android:textColor="#88000000"-->
+                    <!--/>-->
+
+                <!--<android.support.v7.widget.AppCompatTextView-->
+                    <!--android:id="@+id/txtViewCheckAadhaar_SubTitle"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:maxLines="2"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:layout_below="@id/txtView_CheckAadhaar_Title"-->
+                    <!--android:text="@string/check_aadhaar_status_subtitle"-->
+                    <!--app:autoSizeTextType="uniform"-->
+                    <!--/>-->
+
+            <!--</RelativeLayout>-->
+
+        <!--</LinearLayout>-->
+
+    <!--</android.support.v7.widget.CardView>-->
+
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:id="@+id/cardScanQRCode"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--app:cardCornerRadius="4dp"-->
+        <!--app:cardElevation="5dp"-->
+        <!--app:contentPadding="10dp">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/imgScanQRCode"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<ImageView-->
+                    <!--android:layout_width="60dp"-->
+                    <!--android:layout_height="60dp"-->
+                    <!--android:src="@drawable/circle"-->
+                    <!--android:scaleType="centerCrop"/>-->
+                <!--<ImageView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:src="@drawable/qrcode"-->
+                    <!--android:layout_centerInParent="true" />-->
+
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/txtView_ScanQRCode_Title"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="left"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:text="@string/scan_qr_code"-->
+                    <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"-->
+                    <!--android:textColor="#88000000"-->
+                    <!--/>-->
+
+                <!--<android.support.v7.widget.AppCompatTextView-->
+                    <!--android:id="@+id/txtView_ScanQRCode_SubTitle"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:maxLines="2"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:layout_below="@id/txtView_ScanQRCode_Title"-->
+                    <!--android:text="@string/scan_qr_code_subtitle"-->
+                    <!--app:autoSizeTextType="uniform"-->
+                    <!--/>-->
+
+            <!--</RelativeLayout>-->
+
+        <!--</LinearLayout>-->
+
+    <!--</android.support.v7.widget.CardView>-->
+
+
+
+
+    </LinearLayout>
+

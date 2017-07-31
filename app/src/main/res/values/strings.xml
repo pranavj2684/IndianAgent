@@ -1,0 +1,167 @@
+<resources>
+    <string name="app_name">Indian Agent</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--Titles-->
+    <string name="action_settings">Settings</string>
+    <string name="aadhaar_card">Aadhaar Card</string>
+    <string name="pan_card">PAN Card</string>
+    <string name="indian_passport">Indian Passport</string>
+    <string name="aadhaar_pan">Link Aadhar-PAN</string>
+    <string name="bill_payment">Bill Payment</string>
+    <string name="download_aadhaar_card">Download Aadhaar Card</string>
+    <string name="apply_new_aadhaar_card">Apply For New Aadhaar Card</string>
+    <string name="check_aadhaar_status">Check Aadhaar Status</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="check_pnr_status">Check PNR Status</string>
+    <string name="irctc_login">IRCTC Login</string>
+    <string name="train_berth_available">Train Berth Availability</string>
+    <string name="trains_betwn_stations">Trains Between Stations</string>
+    <string name="fair_enquiry">Fair Enquiry</string>
+    <string name="nat_train_enq_system">National Train Enquiry System</string>
+    <string name="dial_139">Dial 139</string>
+    <string name="sms_service">SMS Services</string>
+
+    <!--SubTitles-->
+    <string name="aadhaar_subtitle">Appointment for Aadhaar, Check your Aadhar Card Status Download Aadhaar Card for Free</string>
+    <string name="pancard_subtitle">Appointment for Aadhaar, Check your Aadhar Card Status Download Aadhaar Card for Free</string>
+    <string name="indian_passport_subtitle">Passport Generation and NRI Passport with Steps to Apply for new Passport.</string>
+    <string name="link_aadhaar_pan_subtitle">Link your Aadhaar Card and PAN Card according to Indian Government Rules.</string>
+    <string name="bill_payment_subtitle">Electricity Bill payment with 46 Electric boards Also BSNL Bill Payment right here.</string>
+    <string name="download_aadhaar_subtitle">Use your PIN Code to open Aadhaar Card PDF.</string>
+    <string name="apply_new_aadhaar_subtitle">Book your Appointment to Apply for New Card</string>
+    <string name="check_aadhaar_status_subtitle">Check your card status you recently applied for.</string>
+    <string name="scan_qr_code_subtitle">Scan your Aadhaar Card and get all details</string>
+    <string name="check_pnr_subtitle">You will be redirected to external link</string>
+    <string name="irctc_login_subtitle">Login to Official IRCTC Website for many features</string>
+    <string name="train_berth_avl_subtitle">Seating Berth Availability Between Two Stations</string>
+    <string name="train_bet_station_subtitle">Trains and Fare Availability Between Two Stations</string>
+    <string name="fair_enquiry_subtitle">Fare Details between two Stations of Sleeper, AC, General..</string>
+    <string name="ntes_subtitle">NTES offers GPS Tracking, Stations and Train Schedule</string>
+    <string name="dial_139_subtitle">Cancel Tickets, Set Destination Alarm and more | Dial 139</string>
+    <string name="sms_service_subtitle">Get PNR Status, Train Arr./Dep. and Time Table on SMS</string>
+
+
+    <!--Instruction Aadhaar-PAN Link-->
+    <string name="instruct_link_aadharpan">Details to Link your Aadhaar Card and PAN Card</string>
+    <string name="instruct_1">1.PAN Card Number</string>
+    <string name="instruct_2">2.Aadhaar Card Number</string>
+    <string name="instruct_3">3.Name as per Aadhaar Card</string>
+    <string name="instruct_4">4.Registered Mobile Number for OTP</string>
+
+    <!--Notes-->
+    <string name="note_1">1. Please ensure the Date of Birth, Gender and Aadhaar Number is as per Aadhaar details to proceed further.</string>
+    <string name="note_2">2. If Date of Birth and Gender is fully matched and Name as per Aadhaar is not exactly matched then the user has to additionally provide Aadhaar OTP to proceed with partial name match.</string>
+    <string name="note_3">3. If details are available with you, then please click the below "Proceed to Website" button.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="url">URL</string>
+
+    <string name="btnText">Pay Electricity Bill</string>
+
+    <!-- Electric Bill Payment States -->
+    <string-array name="states_array">
+        <item>Andhra Pradesh (Southern-APCPDCL)</item>
+        <item>Andhra Pradesh (Eastern-APEPDCL)</item>
+        <item>Andhra Pradesh (North-APNPDCL)</item>
+        <item>Assam</item>
+        <item>Bihar (North)</item>
+        <item>Bihar (South)</item>
+        <item>Chhattisgarh CSPDCL</item>
+        <item>Goa</item>
+        <item>Gujrat (TorrentPower)</item>
+        <item>Gujrat (Dakshin-GVCL)</item>
+        <item>Gujrat (Paschim-GVCL)</item>
+        <item>Gujrat (Uttar-GVCL)</item>
+        <item>Gujrat (Madhya-GVCl)</item>
+        <item>Haryana (Dakshin-HBVNL)</item>
+        <item>Haryana (Uttar-HBVNL)</item>
+        <item>Himachal Pradesh</item>
+        <item>Jharkhand</item>
+        <item>Karnataka (Hubli-ESCOM)</item>
+        <item>Karnataka (Gulbarga-ESCOM)</item>
+        <item>Kerala</item>
+        <item>Madhya Pradesh (Paschim)</item>
+        <item>Madhya Pradesh (Central)</item>
+        <item>Madhya Pradesh (Poorv)</item>
+        <item>Maharashtra</item>
+        <item>Mumbai (Reliance)</item>
+        <item>Mumbai (TATA Power)</item>
+        <item>Mumbai (BEST Electric)</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Delhi (NCR-North Delhi)</item>
+        <item>Delhi (Yamuna Power)</item>
+        <item>Delhi (Rajdhani Power Ltd)</item>
+        <item>Orissa (North Eastern)</item>
+        <item>Orissa (Western)</item>
+        <item>Orissa (Central)</item>
+        <item>Punjab (PSPCL)</item>
+        <item>Rajasthan (Jaipur-JVVNL)</item>
+        <item>Rajasthan (Ajmer-AVVNL)</item>
+        <item>Rajasthan (Jodhpur-JDVVNL)</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Uttar Pradesh</item>
+        <item>Uttar Pradesh (Kanpur-KESC)</item>
+        <item>Uttarakhand</item>
+        <item>West Bengal</item>
+    </string-array>
+
+    <!-- Electric bill payment Links statewise -->
+    <string-array name="electric_bill_payment_links">
+        <item>https://www.billdesk.com/APCPDCL/apcpdcl.htm</item>
+        <item>https://www.apeasternpower.com/EPDCL_Home.portal?_nfpb=true&amp;_pageLabel=EPDCL_Home_portal_page_1027</item>
+        <item>https://www.billdesk.com/pgidsk/pgmerc/npdcl/NPDCLDetails.jsp</item>
+        <item>http://www.apdcl.gov.in/webdynpro/resources/nerapdrp.gov.in/home~asqwpay/AssamPayWithOutLogin#</item>
+        <item>https://www.payumoney.com/billPay/#/northBiharElectricity?utm_medium=bb</item>
+        <item>https://www.payumoney.com/billPay/#/southBiharElectricity?utm_medium=bb</item>
+        <item>http://www.cspdcl.co.in/cseb/(S(nd3pba5o1mhnsgofppdutd40))/billPayment.aspx</item>
+        <item>https://www.goa.gov.in/EFormsOnlineModule/loginAuthenticateAction.action</item>
+        <item>https://connect.torrentpower.com/tplcp/index.php/crCustmast/quickpay</item>
+        <item>https://www.dgvcl.in:7011/PortalWeb/appmanager/LaunchPortal/LaunchDesktop?_nfpb=true&amp;_windowLabel=portletInstance_55&amp;_nffvid=%2FPortalWeb%2Fpages%2Fpayment%2FquickPay.jspx&amp;_pageLabel=portal_homeportal_portal_page_5#wlp_portletInstance_55</item>
+        <item>https://www.pgvcl.in:7015/PortalWeb/appmanager/LaunchPortal/LaunchDesktop?_nfpb=true&amp;_windowLabel=portletInstance_55&amp;_nffvid=%2FPortalWeb%2Fpages%2Fpayment%2FquickPay.jspx&amp;_pageLabel=portal_homeportal_portal_page_5#wlp_portletInstance_55</item>
+        <item>https://www.ugvcl.in:7016/PortalWeb/appmanager/LaunchPortal/LaunchDesktop?_nfpb=true&amp;_windowLabel=portletInstance_55&amp;_nffvid=%2FPortalWeb%2Fpages%2Fpayment%2FquickPay.jspx&amp;_pageLabel=portal_homeportal_portal_page_5#wlp_portletInstance_55</item>
+        <item>https://www.mgvcl.in:7013/PortalWeb/appmanager/LaunchPortal/LaunchDesktop?_nfpb=true&amp;_windowLabel=portletInstance_55&amp;_nffvid=%2FPortalWeb%2Fpages%2Fpayment%2FquickPay.jspx&amp;_pageLabel=portal_homeportal_portal_page_5#wlp_portletInstance_55</item>
+        <item>http://epayment.dhbvn.org.in/</item>
+        <item>http://epayment.uhbvn.org.in/</item>
+        <item>http://www.hpseb.com/mybill/</item>
+        <item>http://juvnl.com/billpmt.html</item>
+        <item>https://www.hescom.co/SCP/MyAccount/QuickPayment.aspx</item>
+        <item>https://www.gescomglb.org/SCP/MyAccount/QuickPayment.aspx</item>
+        <item>http://pg.kseb.in/ui/qpay.php</item>
+        <item>http://www.mpwz.co.in/portal/Indore_home.portal?_nfpb=true&amp;_pageLabel=custCentre_viewBill_ind</item>
+        <item>http://www.mpcz.co.in/portal/Bhopal_home.portal?_nfpb=true&amp;_pageLabel=custCentre_viewBill_bpl</item>
+        <item>http://www.mpez.co.in/portal/Jabalpur_home.portal?_nfpb=true&amp;_pageLabel=custCentre_viewBill_jbl</item>
+        <item>https://wss.mahadiscom.in/wss/wss?uiActionName=getViewPayBill</item>
+        <item>https://www.payumoney.com/billPay/#/relianceEnergy?utm_medium=bb</item>
+        <item>http://www.tatapower-ddl.com/showcontent.aspx?this=98&amp;f=CUSTOMER-ZONE&amp;s=Bill-Payment&amp;t=Pay-Bill-Online</item>
+        <item>https://www.bestundertaking.net/QuickPayment.aspx</item>
+        <item>http://energybill.man.nic.in/webpages/default.aspx</item>
+        <item>http://www.mepdcl.co.in/irj/go/km/docs/internet/MEGHALAYA/webpage/pages/MePDCL_Logon.html</item>
+        <item>http://www.tatapower-ddl.com/showcontent.aspx?this=98&amp;f=CUSTOMER-ZONE&amp;s=Bill-Payment&amp;t=Pay-Bill-Online</item>
+        <item>http://www.bsesdelhi.com/bsesdelhi/caVerification4Pay.do</item>
+        <item>http://www.bsesdelhi.co.in/bses-delhi-bill-payment.htm</item>
+        <item>https://www.payumoney.com/billPay/#/nesco?utm_medium=bb</item>
+        <item>http://odishadiscoms.com/applications/onlinepay/consumerlogin.aspx</item>
+        <item>https://www.odishaonline.gov.in/Site/Common_Quick_Pay.aspx</item>
+        <item>http://epayment.pspcl.com/</item>
+        <item>http://115.249.108.34/jvvnl_web/</item>
+        <item>http://115.249.108.34/jdvvnl_web/</item>
+        <item>http://115.249.108.34/jdvvnl_web/</item>
+        <item>http://www.sikkimpower.in/irj/go/km/docs/internet/webpage/Portal_Login.html</item>
+        <item>https://www.tnebnet.org/awp/login</item>
+        <item>https://www.payumoney.com/billPay/#/tsspdcl?utm_source=bb&amp;utm_medium=aff&amp;utm_campaign=tsspdcl</item>
+        <item>https://www.uppclonline.com/dispatch/Portal/appmanager/uppcl/wss?_nfpb=true&amp;_pageLabel=uppcl_loginreg_login&amp;pageID=LR_002</item>
+        <item>http://www.kesco.co.in/docs/Login2.jsp</item>
+        <item>https://www.upcl.org/wss/Consumer_Data.htm</item>
+        <item>http://www.wbsedcl.in/webdynpro/dispatcher/local/QUARTERLYONLINEPAYMENT/OnlineBillPay</item>
+    </string-array>
+
+
+</resources>

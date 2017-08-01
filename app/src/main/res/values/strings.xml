@@ -63,6 +63,11 @@
 
     <string name="btnText">Pay Electricity Bill</string>
 
+    //Passport
+    <string name="nri_passport">NRI PASSPORT GENERATION</string>
+    <string name="normal_passport">NORMAL PASSPORT GENERATION</string>
+    <string name="steps_for_passport">STEPS FOR NORMAL PASSPORT GENERATION</string>
+
     <!-- Electric Bill Payment States -->
     <string-array name="states_array">
         <item>Andhra Pradesh (Southern-APCPDCL)</item>

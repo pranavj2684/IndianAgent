@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/IndianAgent.iml" filepath="$PROJECT_DIR$/IndianAgent.iml" />
       <module fileurl="file://D:\indian-agent\IndianAgent.iml" filepath="D:\indian-agent\IndianAgent.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://D:\indian-agent\app\app.iml" filepath="D:\indian-agent\app\app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/indian-agent.iml" filepath="$PROJECT_DIR$/indian-agent.iml" />
+      <module fileurl="file://D:\AndroidProjects\IndianAgentNew\IndianAgent\indian-agent.iml" filepath="D:\AndroidProjects\IndianAgentNew\IndianAgent\indian-agent.iml" />
     </modules>
   </component>
 </project>

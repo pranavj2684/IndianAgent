@@ -22,6 +22,7 @@ import in.itechvalley.indianagent.Fragments.AadhaarFragment;
 import in.itechvalley.indianagent.Fragments.AadhaarPanFragment;
 import in.itechvalley.indianagent.Fragments.MainFragment;
 import in.itechvalley.indianagent.Fragments.MsebBillFragment;
+import in.itechvalley.indianagent.Fragments.PassportFragment;
 import in.itechvalley.indianagent.Model.GetterSetter;
 import in.itechvalley.indianagent.R;
 import in.itechvalley.indianagent.WebviewActivity;
@@ -102,10 +103,17 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
 //                    {
 //
 //                    }
-//                    case 2:
-//                    {
-//
-//                    }
+                    case 2:
+                    {
+                        PassportFragment passportFragment = new PassportFragment();
+                        fragmentManager
+                                .beginTransaction()
+                                .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right, android.R.anim.slide_in_left, android.R.anim.slide_out_right)
+                                .replace(R.id.container, passportFragment)
+                                .addToBackStack(null)
+                                .commit();
+                        break;
+                    }
                     case 3:
                     {
                         FragmentTransaction transaction = fragmentManager.beginTransaction();
@@ -119,7 +127,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
                     case 4:
                     {
                         FragmentTransaction transaction = fragmentManager.beginTransaction();
-                        MsebBillFragment msebBillFragment = new MsebBillFragment();
+                        MsebBillFragment msebBillFragment;
+                        msebBillFragment = new MsebBillFragment();
                         transaction.replace(R.id.container, msebBillFragment)
                                 .addToBackStack(null)
                                 .commit();

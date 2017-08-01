@@ -12,8 +12,9 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-
 import in.itechvalley.indianagent.Fragments.MainFragment;
+import in.itechvalley.indianagent.Fragments.MsebBillFragment;
+import in.itechvalley.indianagent.Fragments.PassportFragment;
 import in.itechvalley.indianagent.Fragments.RailwayFragment;
 
 public class MainActivity extends AppCompatActivity
@@ -117,9 +118,27 @@ public class MainActivity extends AppCompatActivity
 
             transaction.replace(R.id.container, railwayFragment).commit();
         }
-        //else if (id == R.id.nav_slideshow) {
-//
-//        } else if (id == R.id.nav_manage) {
+        else if (id == R.id.nav_pay_eBill)
+        {
+            fragmentManager = getSupportFragmentManager();
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
+            MsebBillFragment msebBillFragment = new MsebBillFragment();
+            transaction.replace(R.id.container, msebBillFragment)
+                    .addToBackStack(null)
+                    .commit();
+
+        }
+        else if (id == R.id.nav_indian_passport)
+        {
+            fragmentManager = getSupportFragmentManager();
+            FragmentTransaction transaction = fragmentManager.beginTransaction();
+            PassportFragment passportFragment = new PassportFragment();
+            transaction.replace(R.id.container, passportFragment)
+                    .addToBackStack(null)
+                    .commit();
+
+        }
+//        else if (id == R.id.nav_manage) {
 //
 //        } else if (id == R.id.nav_share) {
 //

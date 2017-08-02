@@ -68,6 +68,11 @@
     <string name="normal_passport">NORMAL PASSPORT GENERATION</string>
     <string name="steps_for_passport">STEPS FOR NORMAL PASSPORT GENERATION</string>
 
+    <!-- AdhaarCard Links-->
+    <string name="download_adhaar_link">https://eaadhaar.uidai.gov.in/</string>
+    <string name="new_adhaar_appoinment_link">https://appointments.uidai.gov.in/</string>
+    <string name="check_adhaar_status_link">https://resident.uidai.net.in/check-aadhaar-status</string>
+
     <!-- Electric Bill Payment States -->
     <string-array name="states_array">
         <item>Andhra Pradesh (Southern-APCPDCL)</item>

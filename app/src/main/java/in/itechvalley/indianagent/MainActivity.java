@@ -116,7 +116,9 @@ public class MainActivity extends AppCompatActivity
             FragmentTransaction transaction = fragmentManager.beginTransaction();
             RailwayFragment railwayFragment = new RailwayFragment(MainActivity.this);
 
-            transaction.replace(R.id.container, railwayFragment).commit();
+            transaction.replace(R.id.container, railwayFragment)
+                    .addToBackStack(null)
+                    .commit();
         }
         else if (id == R.id.nav_pay_eBill)
         {

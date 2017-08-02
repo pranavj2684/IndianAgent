@@ -10,7 +10,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/cardDownloadAadhaar"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
@@ -32,14 +32,14 @@
                    <ImageView
                        android:layout_width="60dp"
                        android:layout_height="60dp"
-                       android:src="@drawable/circle"
+                       app:srcCompat="@drawable/circle"
                        android:scaleType="centerCrop"
                        android:contentDescription="@string/download_aadhaar_card"/>
                    <ImageView
                        android:id="@+id/upperImageView"
                        android:layout_width="30dp"
                        android:layout_height="30dp"
-                       android:src="@drawable/download"
+                       app:srcCompat="@drawable/download"
                        android:layout_centerInParent="true" />
 
                </RelativeLayout>

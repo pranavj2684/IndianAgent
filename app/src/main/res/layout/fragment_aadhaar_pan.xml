@@ -97,8 +97,10 @@
         android:backgroundTint="#E91E63"
         android:text="Proceed to Website"
         android:textColor="@android:color/white"
-        android:drawableLeft="@drawable/open_in_new"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
 </LinearLayout>
 
 </ScrollView>
+
+
+    <!--android:drawableLeft="@drawable/open_in_new"-->

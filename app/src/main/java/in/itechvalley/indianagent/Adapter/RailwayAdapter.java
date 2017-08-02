@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -141,8 +142,8 @@ public class RailwayAdapter extends RecyclerView.Adapter<RailwayAdapter.MyViewHo
                     // Dial 139
                     case 6:
                     {
-                        Intent intent = new Intent(context, WebviewActivity.class);
-                        intent.putExtra(Constants.KEY_URL, "");
+                        Intent intent = new Intent(Intent.ACTION_DIAL);
+                        intent.setData(Uri.parse("tel:139"));
                         context.startActivity(intent);
                         break;
                     }

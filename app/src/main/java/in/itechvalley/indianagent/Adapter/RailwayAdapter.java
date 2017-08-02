@@ -21,6 +21,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import in.itechvalley.indianagent.Constants.Constants;
 import in.itechvalley.indianagent.Model.GetterSetter;
 import in.itechvalley.indianagent.R;
 import in.itechvalley.indianagent.WebviewActivity;
@@ -31,8 +32,7 @@ import in.itechvalley.indianagent.WebviewActivity;
 
 public class RailwayAdapter extends RecyclerView.Adapter<RailwayAdapter.MyViewHolder>
 {
-    public static final String KEY_URL = "URL";
-    public static final String KEY_HEADING = "HEADING";
+
 
     private FragmentManager fragmentManager;
     Context context;
@@ -142,15 +142,15 @@ public class RailwayAdapter extends RecyclerView.Adapter<RailwayAdapter.MyViewHo
                     case 6:
                     {
                         Intent intent = new Intent(context, WebviewActivity.class);
-                        intent.putExtra(KEY_URL, "");
+                        intent.putExtra(Constants.KEY_URL, "");
                         context.startActivity(intent);
                         break;
                     }
                     case 7:
                     {
                         Intent intent = new Intent(context, WebviewActivity.class);
-                        intent.putExtra(KEY_URL, "http://www.indianrail.gov.in/139.html");
-                        intent.putExtra(KEY_HEADING, "SMS Services");
+                        intent.putExtra(Constants.KEY_URL, "http://www.indianrail.gov.in/139.html");
+                        intent.putExtra(Constants.KEY_HEADING, "SMS Services");
                         context.startActivity(intent);
                         break;
                     }
@@ -158,7 +158,8 @@ public class RailwayAdapter extends RecyclerView.Adapter<RailwayAdapter.MyViewHo
                 }
             }
         });
-        if(position >lastPosition) {
+        if (position > lastPosition)
+        {
 
             Animation animation = AnimationUtils.loadAnimation(context,
                     R.anim.up_from_bottom);
@@ -169,13 +170,17 @@ public class RailwayAdapter extends RecyclerView.Adapter<RailwayAdapter.MyViewHo
 
     private void startWebActivity(String url, String title)
     {
-        intent.putExtra(KEY_URL, url);
-        intent.putExtra(KEY_HEADING, title);
+        intent.putExtra(Constants.KEY_URL, url);
+        intent.putExtra(Constants.KEY_HEADING, title);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
+        {
             context.startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(appCompatActivity).toBundle());
+        }
         else
+        {
             context.startActivity(intent);
+        }
     }
 
     @Override

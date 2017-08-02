@@ -72,6 +72,9 @@
     <string name="download_adhaar_link">https://eaadhaar.uidai.gov.in/</string>
     <string name="new_adhaar_appoinment_link">https://appointments.uidai.gov.in/</string>
     <string name="check_adhaar_status_link">https://resident.uidai.net.in/check-aadhaar-status</string>
+    <string name="check_aadhaar_status_title">Check Aadhaar Status</string>
+    <string name="title">Title</string>
+
 
     <!-- Electric Bill Payment States -->
     <string-array name="states_array">

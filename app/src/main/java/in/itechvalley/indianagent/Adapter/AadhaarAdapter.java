@@ -1,9 +1,12 @@
 package in.itechvalley.indianagent.Adapter;
 
+import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -15,10 +18,12 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import in.itechvalley.indianagent.Constants.Constants;
 import in.itechvalley.indianagent.Fragments.AadhaarFragment;
 import in.itechvalley.indianagent.Model.GetterSetter;
 import in.itechvalley.indianagent.QRCodeScanning;
 import in.itechvalley.indianagent.R;
+import in.itechvalley.indianagent.WebviewActivity;
 
 /**
  * Created by pranav on 29/07/2017.
@@ -26,6 +31,9 @@ import in.itechvalley.indianagent.R;
 
 public class AadhaarAdapter extends RecyclerView.Adapter<AadhaarAdapter.MyViewHolder>
 {
+
+    private Intent intent;
+
     FragmentManager fragmentManager;
     Context context;
 
@@ -61,6 +69,7 @@ public class AadhaarAdapter extends RecyclerView.Adapter<AadhaarAdapter.MyViewHo
     {
 
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_aadhaar, parent, false);
+        intent = new Intent(context, WebviewActivity.class);
         return new MyViewHolder(v);
 
     }
@@ -100,16 +109,20 @@ public class AadhaarAdapter extends RecyclerView.Adapter<AadhaarAdapter.MyViewHo
 //                        break;
 
 
-
                         break;
                     }
                     case 1:
                     {
+                        startWebActivity("https://appointments.uidai.gov.in/",
+                                "Enrolment Center Search");
 
                         break;
                     }
                     case 2:
                     {
+                        startWebActivity("https://resident.uidai.net.in/check-aadhaar-status",
+                                "Check Aadhaar Status");
+
                         break;
                     }
                     case 3:
@@ -137,5 +150,14 @@ public class AadhaarAdapter extends RecyclerView.Adapter<AadhaarAdapter.MyViewHo
         return services.size();
     }
 
+    private void startWebActivity(String url, String title)
+    {
+        intent.putExtra(Constants.KEY_URL, url);
+        intent.putExtra(Constants.KEY_HEADING, title);
+
+
+        Log.d("TAG", "startWebActivity:++++++++ "+url+title);
+        context.startActivity(intent);
+    }
 
 }

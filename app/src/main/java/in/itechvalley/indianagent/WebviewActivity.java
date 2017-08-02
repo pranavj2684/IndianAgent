@@ -19,6 +19,7 @@ import android.webkit.WebView;
 import android.widget.ProgressBar;
 
 import in.itechvalley.indianagent.Adapter.RailwayAdapter;
+import in.itechvalley.indianagent.Constants.Constants;
 import in.itechvalley.indianagent.Fragments.RailwayFragment;
 
 public class WebviewActivity extends AppCompatActivity
@@ -45,11 +46,12 @@ public class WebviewActivity extends AppCompatActivity
         progressBar.setScaleY(3f);
         progressBar.getProgressDrawable().setColorFilter(Color.parseColor("#ff0099cc"), PorterDuff.Mode.SRC_IN);
 
-        final String url = getIntent().getStringExtra(RailwayAdapter.KEY_URL);
-        getSupportActionBar().setTitle(getIntent().getStringExtra(RailwayAdapter.KEY_HEADING));
+        final String url = getIntent().getStringExtra(Constants.KEY_URL);
+        getSupportActionBar().setTitle(getIntent().getStringExtra(Constants.KEY_HEADING));
 
         webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
         webSettings.setUserAgentString("Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1");
         webSettings.setBuiltInZoomControls(true);
         webSettings.setAllowContentAccess(true);

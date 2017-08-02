@@ -93,6 +93,8 @@ public class AadhaarAdapter extends RecyclerView.Adapter<AadhaarAdapter.MyViewHo
                 {
                     case 0:
                     {
+                        startWebActivity("https://eaadhaar.uidai.gov.in/",
+                                "Download Aadhar Card");
 
 //                        Bundle bundle = new Bundle();
 //                        bundle.putString("URL","https://uidai.gov.in");

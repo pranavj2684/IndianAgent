@@ -3,6 +3,7 @@ package in.itechvalley.indianagent;
 import android.app.ActivityOptions;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
+import android.net.http.SslError;
 import android.os.Build;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -13,10 +14,13 @@ import android.transition.Slide;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
+import android.webkit.SslErrorHandler;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import in.itechvalley.indianagent.Adapter.RailwayAdapter;
 import in.itechvalley.indianagent.Constants.Constants;
@@ -28,17 +32,18 @@ public class WebviewActivity extends AppCompatActivity
     WebSettings webSettings;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         setContentView(R.layout.activity_webview);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
-        {
-            getWindow().setEnterTransition(new Slide());
-            getWindow().setExitTransition(new Slide());
-        }
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
+//        {
+//            getWindow().setEnterTransition(new Slide());
+//            getWindow().setExitTransition(new Slide());
+//        }
 
         webView = findViewById(R.id.webView);
 
@@ -75,12 +80,48 @@ public class WebviewActivity extends AppCompatActivity
         webView.setWebChromeClient(new WebChromeClient()
         {
             @Override
-            public void onProgressChanged(WebView view, int newProgress) {
-                    progressBar.setVisibility(View.VISIBLE);
-                    progressBar.setProgress(newProgress);
+            public void onProgressChanged(WebView view, int newProgress)
+            {
+                progressBar.setVisibility(View.VISIBLE);
+                progressBar.setProgress(newProgress);
             }
         });
+
+        //noinspection deprecation
+        webView.setWebViewClient(new WebViewClient()
+        {
+            @Override
+            public void onPageFinished(WebView view, String url)
+            {
+                progressBar.setProgress(100);
+                progressBar.setVisibility(View.GONE);
+
+                if (view.getTitle() != null)
+                {
+                    assert getSupportActionBar() != null;
+                    getSupportActionBar().setTitle(view.getTitle());
+                }
+            }
+
+
+            @Override
+            public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error)
+            {
+                handler.proceed();
+            }
+
+            @Override
+            public void onReceivedError(WebView view, int errorCode, String description, final String failingUrl)
+            {
+                view.loadUrl("https://www.google.co.in");
+                Toast.makeText(WebviewActivity.this, "Error", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item)

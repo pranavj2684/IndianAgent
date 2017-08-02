@@ -53,6 +53,7 @@ public class AadhaarFragment extends Fragment
 
     public void prepareData()
     {
+        servicesList.clear();
         GetterSetter getterSetter = new GetterSetter(R.drawable.download, getString(R.string.download_aadhaar_card), getString(R.string.download_aadhaar_subtitle), 0);
         servicesList.add(getterSetter);
 

@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
+import in.itechvalley.indianagent.Adapter.PassportAdapter;
 import in.itechvalley.indianagent.Model.GetterSetter;
 import in.itechvalley.indianagent.R;
 
@@ -54,6 +55,7 @@ public class PassportFragment extends Fragment
 
     private void prepareData()
     {
+        passportServicesList.clear();
         GetterSetter getterSetter = new GetterSetter(R.drawable.download, getString(R.string.nri_passport), "Sir Please Update", 0);
         passportServicesList.add(getterSetter);
 

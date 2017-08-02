@@ -134,6 +134,7 @@ public class RailwayFragment extends Fragment
 
     public void prepareData()
     {
+        servicesList.clear();
         GetterSetter getterSetter = new GetterSetter(R.drawable.train, getString(R.string.check_pnr_status), getString(R.string.check_pnr_subtitle), 0);
         servicesList.add(getterSetter);
 

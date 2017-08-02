@@ -73,6 +73,12 @@
     <string name="new_adhaar_appoinment_link">https://appointments.uidai.gov.in/</string>
     <string name="check_adhaar_status_link">https://resident.uidai.net.in/check-aadhaar-status</string>
     <string name="check_aadhaar_status_title">Check Aadhaar Status</string>
+
+    <!--Passport Links-->
+    <string name="NRI_passport">https://passport.gov.in/nri/Online.do</string>
+    <string name="apply_online">https://portal2.passportindia.gov.in/AppOnlineProject/user/RegistrationBaseAction?request_locale=en</string>
+    <string name="procedure">https://portal2.passportindia.gov.in/AppOnlineProject/online/procEFormSub</string>
+
     <string name="title">Title</string>
 
 

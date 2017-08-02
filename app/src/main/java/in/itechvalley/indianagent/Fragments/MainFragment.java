@@ -50,6 +50,7 @@ public class MainFragment extends Fragment
 
     private void prepareData()
     {
+        servicesList.clear();
         GetterSetter getterSetter = new GetterSetter(R.drawable.ic_aadhaar_card, getString(R.string.aadhaar_card), getString(R.string.aadhaar_subtitle), 0);
         servicesList.add(getterSetter);
 

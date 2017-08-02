@@ -95,22 +95,6 @@ public class AadhaarAdapter extends RecyclerView.Adapter<AadhaarAdapter.MyViewHo
                     {
                         startWebActivity("https://eaadhaar.uidai.gov.in/",
                                 "Download Aadhar Card");
-
-//                        Bundle bundle = new Bundle();
-//                        bundle.putString("URL","https://uidai.gov.in");
-//
-//                        fragmentManager = ((AppCompatActivity)context).getSupportFragmentManager();
-//                        webviewFragment.setArguments(bundle);
-//                        FragmentTransaction transaction = fragmentManager.beginTransaction();
-//                        transaction.replace(R.id.container,webviewFragment).commit();
-
-//                        WebviewActivity webviewActivity = new WebviewActivity();
-//                        Intent intent = new Intent(context, WebviewActivity.class);
-//                        intent.putExtra("URL", "https://incometaxindiaefiling.gov.in/e-Filing/Services/LinkAadhaarPrelogin.html");
-//                        ((AppCompatActivity) context).startActivity(intent);
-//                        break;
-
-
                         break;
                     }
                     case 1:
@@ -133,12 +117,10 @@ public class AadhaarAdapter extends RecyclerView.Adapter<AadhaarAdapter.MyViewHo
                         context.startActivity(i);
                         break;
                     }
-                    case 4:
-                    {
-                        break;
-                    }
-
-
+//                    case 4:
+//                    {
+//                        break;
+//                    }
                 }
             }
         });

@@ -1,6 +1,7 @@
-package in.itechvalley.indianagent.Fragments;
+package in.itechvalley.indianagent.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -13,15 +14,18 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import in.itechvalley.indianagent.Constants.Constants;
 import in.itechvalley.indianagent.Model.GetterSetter;
 import in.itechvalley.indianagent.R;
+import in.itechvalley.indianagent.WebviewActivity;
 
 /**
  * Created by Mayur Bherade on 01-08-2017.
  */
 
-class PassportAdapter extends RecyclerView.Adapter<PassportAdapter.MyViewHolder>
+public class PassportAdapter extends RecyclerView.Adapter<PassportAdapter.MyViewHolder>
 {
+    private Intent intent;
     FragmentManager fragmentManager;
     Context context;
 
@@ -54,6 +58,7 @@ class PassportAdapter extends RecyclerView.Adapter<PassportAdapter.MyViewHolder>
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
     {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_passport, parent, false);
+        intent = new Intent(context, WebviewActivity.class);
         return new MyViewHolder(v);
 
     }
@@ -77,14 +82,20 @@ class PassportAdapter extends RecyclerView.Adapter<PassportAdapter.MyViewHolder>
                 {
                     case 0:
                     {
+                        startWebActivity("https://passport.gov.in/nri/Online.do",
+                                "NRI Passport");
                         break;
                     }
                     case 1:
                     {
+                        startWebActivity("https://portal2.passportindia.gov.in/AppOnlineProject/user/RegistrationBaseAction?request_locale=en",
+                                "Apply Online");
                         break;
                     }
                     case 2:
                     {
+                        startWebActivity("https://portal2.passportindia.gov.in/AppOnlineProject/online/procEFormSub",
+                                "Passport Procedure");
                         break;
                     }
                 }
@@ -98,6 +109,18 @@ class PassportAdapter extends RecyclerView.Adapter<PassportAdapter.MyViewHolder>
     {
         return passportServices.size();
     }
+
+    private void startWebActivity(String url, String title)
+    {
+        intent.putExtra(Constants.KEY_URL, url);
+        intent.putExtra(Constants.KEY_HEADING, title);
+
+
+        Log.d("TAG", "startWebActivity:++++++++ "+url+title);
+        context.startActivity(intent);
+    }
+
+
 
 
 }

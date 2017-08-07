@@ -98,6 +98,29 @@ public class PassportAdapter extends RecyclerView.Adapter<PassportAdapter.MyView
                                 "Passport Procedure");
                         break;
                     }
+                    case 3: {
+                        startWebActivity(Constants.PASSPORT_FEE_CALCULATOR_URL, "Passport Fee Calculator");
+                        break;
+                    }
+                    case 4: {
+                        startWebActivity(Constants.PASSPORT_KNOW_YOUR_POLICE_STATION_URL, "Police Station");
+                        break;
+                    }
+                    case 5:
+                    {
+                     startWebActivity(Constants.PASSPORT_ACT_RULES_URL,"Passport Act & Rules");
+                     break;
+                    }
+                    case 6:
+                    {
+                        startWebActivity(Constants.PASSPORT_DOWNLOAD_EFORM_URL,"Passport E-Form");
+                        break;
+                    }
+                    case 7:
+                    {
+                        startWebActivity(Constants.PASSPORT_DOWNLOAD_PRINT_FORM_URL,"Passport Print Form");
+                        break;
+                    }
                 }
             }
         });

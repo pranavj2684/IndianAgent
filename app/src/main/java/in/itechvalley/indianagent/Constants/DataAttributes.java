@@ -1,4 +1,4 @@
-package in.itechvalley.indianagent.Model;
+package in.itechvalley.indianagent.Constants;
 
 /**
  * Created by Wasim Sayyad on 02-08-2017.

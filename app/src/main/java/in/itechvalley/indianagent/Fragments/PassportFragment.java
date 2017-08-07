@@ -59,11 +59,27 @@ public class PassportFragment extends Fragment
         GetterSetter getterSetter = new GetterSetter(R.drawable.download, getString(R.string.nri_passport), "Sir Please Update", 0);
         passportServicesList.add(getterSetter);
 
-        getterSetter = new GetterSetter(R.drawable.download, getString(R.string.normal_passport), "Sir Please Update", 0);
+        getterSetter = new GetterSetter(R.drawable.download, getString(R.string.normal_passport), "Sir Please Update", 1);
         passportServicesList.add(getterSetter);
 
-        getterSetter = new GetterSetter(R.drawable.download, getString(R.string.steps_for_passport), "Sir Please Update", 0);
+        getterSetter = new GetterSetter(R.drawable.download, getString(R.string.steps_for_passport), "Sir Please Update", 2);
         passportServicesList.add(getterSetter);
+
+        getterSetter = new GetterSetter(R.drawable.download, getString(R.string.fee_calculator), "Sir Please Update", 3);
+        passportServicesList.add(getterSetter);
+
+        getterSetter = new GetterSetter(R.drawable.download, getString(R.string.know_ur_police_station), "Sir Please Update", 4);
+        passportServicesList.add(getterSetter);
+
+        getterSetter = new GetterSetter(R.drawable.download, getString(R.string.passposr_act_rules), "Sir Please Update", 4);
+        passportServicesList.add(getterSetter);
+
+        getterSetter = new GetterSetter(R.drawable.download, getString(R.string.passport_download_eform), "Sir Please Update", 4);
+        passportServicesList.add(getterSetter);
+
+        getterSetter = new GetterSetter(R.drawable.download, getString(R.string.passport_download_print_eform), "Sir Please Update", 4);
+        passportServicesList.add(getterSetter);
+
     }
 
 

@@ -1,16 +1,11 @@
 package in.itechvalley.indianagent;
 
-import android.app.ActivityOptions;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.net.http.SslError;
-import android.os.Build;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.transition.ChangeClipBounds;
-import android.transition.Explode;
-import android.transition.Slide;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
@@ -22,9 +17,7 @@ import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import in.itechvalley.indianagent.Adapter.RailwayAdapter;
 import in.itechvalley.indianagent.Constants.Constants;
-import in.itechvalley.indianagent.Fragments.RailwayFragment;
 
 public class WebviewActivity extends AppCompatActivity
 {
@@ -135,5 +128,14 @@ public class WebviewActivity extends AppCompatActivity
             }
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (webView.canGoBack()) {
+            webView.goBack();
+        } else {
+            super.onBackPressed();
+        }
     }
 }

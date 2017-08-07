@@ -1,8 +1,9 @@
 package in.itechvalley.indianagent;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -12,19 +13,21 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import in.itechvalley.indianagent.Constants.Constants;
+import in.itechvalley.indianagent.Fragments.AadhaarFragment;
+import in.itechvalley.indianagent.Fragments.AadhaarPanFragment;
 import in.itechvalley.indianagent.Fragments.MainFragment;
 import in.itechvalley.indianagent.Fragments.MsebBillFragment;
 import in.itechvalley.indianagent.Fragments.PassportFragment;
 import in.itechvalley.indianagent.Fragments.RailwayFragment;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener
-{
+        implements NavigationView.OnNavigationItemSelectedListener {
     FragmentManager fragmentManager;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -57,38 +60,31 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
-    public void onBackPressed()
-    {
+    public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START))
-        {
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
-        }
-        else
-        {
+        } else {
             super.onBackPressed();
         }
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu)
-    {
+    public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item)
-    {
+    public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings)
-        {
+        if (id == R.id.action_settings) {
             return true;
         }
 
@@ -97,21 +93,18 @@ public class MainActivity extends AppCompatActivity
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item)
-    {
+    public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_aadhaar_card)
-        {
+        if (id == R.id.nav_aadhaar_card) {
             fragmentManager = getSupportFragmentManager();
             FragmentTransaction transaction = fragmentManager.beginTransaction();
-            MainFragment mainFragment = new MainFragment();
-
-            transaction.replace(R.id.container, mainFragment).commit();
-        }
-        else if (id == R.id.nav_rail_services)
-        {
+            AadhaarFragment aadhaarFragment = new AadhaarFragment();
+            transaction.replace(R.id.container, aadhaarFragment)
+                    .addToBackStack(null)
+                    .commit();
+        } else if (id == R.id.nav_rail_services) {
             fragmentManager = getSupportFragmentManager();
             FragmentTransaction transaction = fragmentManager.beginTransaction();
             RailwayFragment railwayFragment = new RailwayFragment(MainActivity.this);
@@ -119,9 +112,14 @@ public class MainActivity extends AppCompatActivity
             transaction.replace(R.id.container, railwayFragment)
                     .addToBackStack(null)
                     .commit();
-        }
-        else if (id == R.id.nav_pay_eBill)
-        {
+        } else if (id == R.id.nav_link_aadhaar_pan) {
+            fragmentManager = getSupportFragmentManager();
+            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+            AadhaarPanFragment aadhaarPanFragment = new AadhaarPanFragment();
+            fragmentTransaction.replace(R.id.container, aadhaarPanFragment)
+                    .addToBackStack(null)
+                    .commit();
+        } else if (id == R.id.nav_pay_eBill) {
             fragmentManager = getSupportFragmentManager();
             FragmentTransaction transaction = fragmentManager.beginTransaction();
             MsebBillFragment msebBillFragment = new MsebBillFragment();
@@ -129,9 +127,7 @@ public class MainActivity extends AppCompatActivity
                     .addToBackStack(null)
                     .commit();
 
-        }
-        else if (id == R.id.nav_indian_passport)
-        {
+        } else if (id == R.id.nav_indian_passport) {
             fragmentManager = getSupportFragmentManager();
             FragmentTransaction transaction = fragmentManager.beginTransaction();
             PassportFragment passportFragment = new PassportFragment();
@@ -139,12 +135,21 @@ public class MainActivity extends AppCompatActivity
                     .addToBackStack(null)
                     .commit();
 
+        } else if (id == R.id.nav_pay_landline_bill) {
+
+            startActivity(new Intent(MainActivity.this, WebviewActivity.class)
+                    .putExtra(Constants.KEY_URL, Constants.BSNL_LANDLINE_PAY_URL)
+                    .putExtra(Constants.KEY_HEADING, Constants.BSNL_LANDLINE_PAY)
+            );
+        } else if (id == R.id.nav_driving_license) {
+//
+            startActivity(new Intent(MainActivity.this, WebviewActivity.class)
+                    .putExtra(Constants.KEY_URL, Constants.DRIVING_LICENCE_WEB_URL)
+                    .putExtra(Constants.KEY_HEADING, Constants.DRIVING_LICENCE)
+
+            );
         }
-//        else if (id == R.id.nav_manage) {
-//
-//        } else if (id == R.id.nav_share) {
-//
-//        } else if (id == R.id.nav_send) {
+        // else if (id == R.id.nav_send) {
 //
 //        }
 

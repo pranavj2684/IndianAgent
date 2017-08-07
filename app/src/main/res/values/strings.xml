@@ -67,6 +67,8 @@
     <string name="nri_passport">NRI PASSPORT GENERATION</string>
     <string name="normal_passport">NORMAL PASSPORT GENERATION</string>
     <string name="steps_for_passport">STEPS FOR NORMAL PASSPORT GENERATION</string>
+    <string name="fee_calculator">PASSPORT FEE CALCULATOR</string>
+
 
     <!-- AdhaarCard Links-->
     <string name="download_adhaar_link">https://eaadhaar.uidai.gov.in/</string>
@@ -75,11 +77,17 @@
     <string name="check_aadhaar_status_title">Check Aadhaar Status</string>
 
     <!--Passport Links-->
+
+    <string name="know_ur_police_station">KNOW YOUR POLICE STATION</string>
+    <string name="passposr_act_rules"><![CDATA[PASSPORT ACT & RUKES (1967& 1980)]]></string>
+    <string name="passport_download_eform">DOWNLOAD E-FORM</string>
+    <string name="passport_download_print_eform">DOWNLOAD AND PRINT APPLICATION FORM</string>
     <string name="NRI_passport">https://passport.gov.in/nri/Online.do</string>
     <string name="apply_online">https://portal2.passportindia.gov.in/AppOnlineProject/user/RegistrationBaseAction?request_locale=en</string>
     <string name="procedure">https://portal2.passportindia.gov.in/AppOnlineProject/online/procEFormSub</string>
 
     <string name="title">Title</string>
+    <string name="DetailsAadharUID">UID</string>
 
 
     <!-- Electric Bill Payment States -->
@@ -181,6 +189,25 @@
         <item>https://www.upcl.org/wss/Consumer_Data.htm</item>
         <item>http://www.wbsedcl.in/webdynpro/dispatcher/local/QUARTERLYONLINEPAYMENT/OnlineBillPay</item>
     </string-array>
+
+
+    // Aadhar details labels
+
+    <string name="label_name">Name</string>
+    <string name="label_uid">UID</string>
+    <string name="label_gender">GENDER</string>
+    <string name="label_yob">YEAR OF BIRTH</string>
+    <string name="label_co">CARE OF</string>
+    <string name="label_vtc">VILLAGE TEHSIL</string>
+    <string name="label_po">POST OFFICE</string>
+    <string name="label_dist">DISTRICT</string>
+    <string name="label_state">STATE</string>
+    <string name="label_pc">POSTAL CODE</string>
+    <string name="label_save">SAVE</string>
+    <string name="label_cancel">CANCEL</string>
+    <string name="no_saved_card">There Is no Saved Aadhar Card</string>
+    <string name="label_home">HOME</string>
+    <string name="label_delete">DELETE</string>
 
 
 </resources>

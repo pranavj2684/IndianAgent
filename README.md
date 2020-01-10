@@ -1,7 +1,7 @@
 # IndianAgent
 A Digital assistant
 
-In this project I have developed an Android Application with an aim of providing a digital assitance to those people who are
+In this project I have developed an Android Application with an aim of providing a digital assistance to those people who are
 not so technically sound but know how to use a basic android application. Usually people find it hard in India to complete any application 
 online using Web Browser. From 2014, Digital India a great initiative by Indian Government to make all required and important document application
 online, bypassing all the problems and hurdles a common man has to face while applying to any important document because of Human intervention.

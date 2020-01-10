@@ -6,6 +6,7 @@ not so technically sound but know how to use a basic android application. Usuall
 online using Web Browser. From 2014, Digital India a great initiative by Indian Government to make all required and important document application
 online, bypassing all the problems and hurdles a common man has to face while applying to any important document because of Human intervention.
 This Application holds functionality such as :
+
 1)Download your Aadhar Card
 
 2)Apply for new Aadhar card 

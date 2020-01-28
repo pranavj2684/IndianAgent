@@ -3,9 +3,11 @@ package in.itechvalley.indianagent.Fragments;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -17,6 +19,7 @@ import android.widget.ImageView;
 
 import java.util.ArrayList;
 
+import in.itechvalley.indianagent.Activities.MainActivity;
 import in.itechvalley.indianagent.Adapter.AadhaarAdapter;
 import in.itechvalley.indianagent.Adapter.RecyclerAdapter;
 import in.itechvalley.indianagent.Model.GetterSetter;
@@ -29,15 +32,29 @@ public class AadhaarFragment extends Fragment
 {
     private ArrayList<GetterSetter> servicesList = new ArrayList<>();
     private RecyclerView recyclerView;
+    private Toolbar Tool;
 
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
+        ((MainActivity)getActivity())
+                .setActionBarTweaks(getString(R.string.aadhaar_card),
+                        ContextCompat.getColor(getContext(),R.color.colorRedPrimary),
+                        ContextCompat.getColor(getContext(),R.color.colorRedPrimaryDark));
+
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.main_fragment, container, false);
 
-        ((Toolbar) getActivity().findViewById(R.id.toolbar)).setTitle("Aadhaar Card");
+
+
 
         recyclerView = rootView.findViewById(R.id.recyclerView);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());

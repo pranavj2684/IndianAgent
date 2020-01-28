@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import in.itechvalley.indianagent.Constants.Constants;
 import in.itechvalley.indianagent.Model.GetterSetter;
 import in.itechvalley.indianagent.R;
-import in.itechvalley.indianagent.WebviewActivity;
+import in.itechvalley.indianagent.Activities.WebviewActivity;
 
 /**
  * Created by Mayur Bherade on 01-08-2017.
@@ -69,7 +69,7 @@ public class PassportAdapter extends RecyclerView.Adapter<PassportAdapter.MyView
         final int clickPosition = holder.getAdapterPosition();
         GetterSetter getterSetter = passportServices.get(position);
         holder.Title.setText(getterSetter.getTitle());
-//        holder.Subtitle.setText(getterSetter.getSubtitle());
+        holder.Subtitle.setText(getterSetter.getSubtitle());
         // holder.img.setImageResource(getterSetter.getImgResourceId());
         holder.img.setImageResource(getterSetter.getImgResourceId());
 

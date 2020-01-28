@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
+import in.itechvalley.indianagent.Activities.WebviewActivity;
 import in.itechvalley.indianagent.R;
 
 /**
@@ -58,7 +58,7 @@ public class MsebBillFragment extends Fragment
             public void onClick(View view)
             {
                 Intent msebBillIntent = new Intent (getActivity().getApplicationContext(),
-                        in.itechvalley.indianagent.WebviewActivity.class);
+                        WebviewActivity.class);
                 msebBillIntent.putExtra(getString(R.string.url), link);
                 startActivity(msebBillIntent);
             }

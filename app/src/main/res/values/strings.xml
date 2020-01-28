@@ -16,20 +16,27 @@
     <string name="check_aadhaar_status">Check Aadhaar Status</string>
     <string name="scan_qr_code">Scan QR Code</string>
     <string name="check_pnr_status">Check PNR Status</string>
-    <string name="irctc_login">IRCTC Login</string>
+    <string name="irctc_login">IRCTC\nLogin</string>
     <string name="train_berth_available">Train Berth Availability</string>
-    <string name="trains_betwn_stations">Trains Between Stations</string>
-    <string name="fair_enquiry">Fair Enquiry</string>
-    <string name="nat_train_enq_system">National Train Enquiry System</string>
+    <string name="trains_betwn_stations">Trains b/w\nStations</string>
+    <string name="fair_enquiry">Fair\nEnquiry</string>
+    <string name="nat_train_enq_system">Enquiry System</string>
     <string name="dial_139">Dial 139</string>
     <string name="sms_service">SMS Services</string>
+    <string name="tatkal_service">Tatkal Service</string>
+    <string name="quick_pay_bill">Quick\nPay Bills</string>
+    <string name="bsnl_recharge">BSNL Recharge</string>
+    <string name="bsnl_customer_care">Customer Care</string>
+    <string name="bsnl_website">Proceed to Website</string>
+    <string name="passport_fragment_title">Passport Hub</string>
+    <string name="railway_fragment_title">Railway Services</string>
 
     <!--SubTitles-->
-    <string name="aadhaar_subtitle">Appointment for Aadhaar, Check your Aadhar Card Status Download Aadhaar Card for Free</string>
-    <string name="pancard_subtitle">Appointment for Aadhaar, Check your Aadhar Card Status Download Aadhaar Card for Free</string>
-    <string name="indian_passport_subtitle">Passport Generation and NRI Passport with Steps to Apply for new Passport.</string>
-    <string name="link_aadhaar_pan_subtitle">Link your Aadhaar Card and PAN Card according to Indian Government Rules.</string>
-    <string name="bill_payment_subtitle">Electricity Bill payment with 46 Electric boards Also BSNL Bill Payment right here.</string>
+    <string name="aadhaar_subtitle">Appointment, Download, Check your Card Status.</string>
+    <string name="pancard_subtitle">Apply for new PAN Card Online.</string>
+    <string name="indian_passport_subtitle">NRI &amp; Indian Passport. Steps to Apply for New Passport.</string>
+    <string name="link_aadhaar_pan_subtitle">Link your Aadhaar &amp; PAN Card according to Indian Govt. Rules.</string>
+    <string name="bill_payment_subtitle">Electricity Bill payment with 46 Electric boards.</string>
     <string name="download_aadhaar_subtitle">Use your PIN Code to open Aadhaar Card PDF.</string>
     <string name="apply_new_aadhaar_subtitle">Book your Appointment to Apply for New Card</string>
     <string name="check_aadhaar_status_subtitle">Check your card status you recently applied for.</string>
@@ -42,7 +49,7 @@
     <string name="ntes_subtitle">NTES offers GPS Tracking, Stations and Train Schedule</string>
     <string name="dial_139_subtitle">Cancel Tickets, Set Destination Alarm and more | Dial 139</string>
     <string name="sms_service_subtitle">Get PNR Status, Train Arr./Dep. and Time Table on SMS</string>
-
+    <string name="tatkal_service_subtitle">Get Tatkal Services And Updates</string>
 
     <!--Instruction Aadhaar-PAN Link-->
     <string name="instruct_link_aadharpan">Details to Link your Aadhaar Card and PAN Card</string>
@@ -63,25 +70,26 @@
 
     <string name="btnText">Pay Electricity Bill</string>
 
-    //Passport
-    <string name="nri_passport">NRI PASSPORT GENERATION</string>
-    <string name="normal_passport">NORMAL PASSPORT GENERATION</string>
-    <string name="steps_for_passport">STEPS FOR NORMAL PASSPORT GENERATION</string>
-    <string name="fee_calculator">PASSPORT FEE CALCULATOR</string>
-
-
     <!-- AdhaarCard Links-->
+
     <string name="download_adhaar_link">https://eaadhaar.uidai.gov.in/</string>
     <string name="new_adhaar_appoinment_link">https://appointments.uidai.gov.in/</string>
     <string name="check_adhaar_status_link">https://resident.uidai.net.in/check-aadhaar-status</string>
     <string name="check_aadhaar_status_title">Check Aadhaar Status</string>
 
+    <!--PAN Aadhaar Link -->
+    <string name="pan_aadhaar_link">https://incometaxindiaefiling.gov.in/e-Filing/Services/LinkAadhaarHome.html</string>
+
     <!--Passport Links-->
 
-    <string name="know_ur_police_station">KNOW YOUR POLICE STATION</string>
-    <string name="passposr_act_rules"><![CDATA[PASSPORT ACT & RUKES (1967& 1980)]]></string>
-    <string name="passport_download_eform">DOWNLOAD E-FORM</string>
-    <string name="passport_download_print_eform">DOWNLOAD AND PRINT APPLICATION FORM</string>
+    <string name="nri_passport">Generate NRI Passport</string>
+    <string name="normal_passport">Generate Passport</string>
+    <string name="steps_for_passport">How to Generate Passport</string>
+    <string name="fee_calculator">Passport Fee Calculator</string>
+    <string name="know_ur_police_station">Know Your Police Station</string>
+    <string name="passposr_act_rules"><![CDATA[Act(1967& 1980)]]></string>
+    <string name="passport_download_eform">Download E-Form</string>
+    <string name="passport_download_print_eform">Download &amp; Print Form</string>
     <string name="NRI_passport">https://passport.gov.in/nri/Online.do</string>
     <string name="apply_online">https://portal2.passportindia.gov.in/AppOnlineProject/user/RegistrationBaseAction?request_locale=en</string>
     <string name="procedure">https://portal2.passportindia.gov.in/AppOnlineProject/online/procEFormSub</string>
@@ -90,7 +98,18 @@
     <string name="DetailsAadharUID">UID</string>
 
 
+    <!--Passport Subtitles-->
+    <string name="nri_passport_subtitle">Click to generate your NRI passport</string>
+    <string name="passport_subtitle">Click to generate your passport</string>
+    <string name="steps_subtitle">Detailed steps how to generate passport</string>
+    <string name="calculate_subtitle">Calculate your passport fee</string>
+    <string name="police_station_subtitle">Nearby police station for police verification</string>
+    <string name="rules_subtitle">Acts and Rules for 1967 &amp; 1980</string>
+    <string name="download_subtitle">Download application form for passport</string>
+    <string name="print_subtitle">Print your passport form</string>
+
     <!-- Electric Bill Payment States -->
+
     <string-array name="states_array">
         <item>Andhra Pradesh (Southern-APCPDCL)</item>
         <item>Andhra Pradesh (Eastern-APEPDCL)</item>
@@ -141,6 +160,7 @@
     </string-array>
 
     <!-- Electric bill payment Links statewise -->
+
     <string-array name="electric_bill_payment_links">
         <item>https://www.billdesk.com/APCPDCL/apcpdcl.htm</item>
         <item>https://www.apeasternpower.com/EPDCL_Home.portal?_nfpb=true&amp;_pageLabel=EPDCL_Home_portal_page_1027</item>
@@ -191,7 +211,7 @@
     </string-array>
 
 
-    // Aadhar details labels
+    <!--Aadhaar Detail Labels -->
 
     <string name="label_name">Name</string>
     <string name="label_uid">UID</string>
@@ -209,5 +229,10 @@
     <string name="label_home">HOME</string>
     <string name="label_delete">DELETE</string>
 
+    <!--Privacy policy Indian Agent-->
+    <string name="policy_heading">Privacy Policy</string>
+    <string name="para_1"><![CDATA[Indian Agent provides information (including Indian Government Forms, Registration Forms). This is done to help us provide our Users with the best customer service and with valuable information regarding relevant Indian Government services.]]></string>
+    <string name="para_2"><![CDATA[Indian Agent is dedicated to not to extract any personal information of Users using the app. Thus no personal information as well as related requests will be extracted in accordance with Indian Agent standards for integrity and objectivity.]]></string>
+    <string name="para_3"><![CDATA[Indian Agent does not place any cookies into your mobile when you traverse through our content. These cookies are placed to keep track of some of the web searches, clicks, and site/section visits you make while on our sites, and to use that information anonymously to customize the content displayed to you on Indian Agent app. No information is used to identify you personally. This app keeps only motive to provide or help users to know or use Indian Government Services.]]></string>
 
 </resources>

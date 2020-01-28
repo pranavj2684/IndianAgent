@@ -1,12 +1,8 @@
 package in.itechvalley.indianagent.Adapter;
 
 import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -20,12 +16,10 @@ import java.util.ArrayList;
 
 import in.itechvalley.indianagent.Fragments.AadhaarFragment;
 import in.itechvalley.indianagent.Fragments.AadhaarPanFragment;
-import in.itechvalley.indianagent.Fragments.MainFragment;
 import in.itechvalley.indianagent.Fragments.MsebBillFragment;
 import in.itechvalley.indianagent.Fragments.PassportFragment;
 import in.itechvalley.indianagent.Model.GetterSetter;
 import in.itechvalley.indianagent.R;
-import in.itechvalley.indianagent.WebviewActivity;
 
 /**
  * Created by pranav on 26/07/2017.

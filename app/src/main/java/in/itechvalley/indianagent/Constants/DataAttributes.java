@@ -5,7 +5,7 @@ package in.itechvalley.indianagent.Constants;
  */
 
 public class DataAttributes {
-    // declare xml attributes of aadhar card QR code xml response
+    /*Declare XML attributes of aadhar card QR code XML response*/
     public static final String AADHAAR_DATA_TAG = "PrintLetterBarcodeData",
             AADHAR_UID_ATTR = "uid",
             AADHAR_NAME_ATTR = "name",

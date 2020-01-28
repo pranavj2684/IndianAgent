@@ -33,28 +33,29 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
                 android:layout_marginLeft="10dp">
 
                 <TextView
                     android:id="@+id/textViewTitle"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
+                    android:gravity="start"
                     android:maxLines="1"
                     android:text="@string/aadhaar_card"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+                    android:textSize="@dimen/textViewTitle_size"
                     android:textColor="#88000000" />
 
                 <android.support.v7.widget.AppCompatTextView
                     android:id="@+id/textView_Subtitle"
                     android:layout_width="match_parent"
-                    android:layout_height="30dp"
+                    android:layout_height="wrap_content"
                     android:maxLines="2"
                     android:layout_marginTop="5dp"
                     android:layout_below="@id/textViewTitle"
                     android:text="@string/aadhaar_subtitle"
-                    app:autoSizeTextType="uniform"
+                    android:textSize="@dimen/textView_Subtitle_size"
                      />
 
             </RelativeLayout>

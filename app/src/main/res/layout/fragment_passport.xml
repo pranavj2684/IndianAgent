@@ -1,15 +1,17 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context="in.itechvalley.indianagent.Fragments.PassportFragment">
+    >
+
 
     <android.support.v7.widget.CardView
         android:id="@+id/cardDownloadAadhaar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="110dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
@@ -31,7 +33,7 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/circle"
+                    app:srcCompat="@drawable/circleblue"
                     android:scaleType="centerCrop"
                     android:contentDescription="@string/download_aadhaar_card"/>
                 <ImageView
@@ -53,27 +55,28 @@
                     android:id="@+id/txtView_Title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
+                    android:gravity="start"
                     android:maxLines="1"
                     android:text="@string/nri_passport"
-                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textSize="@dimen/textView_passport_Title_size"
                     android:textColor="#88000000" />
 
-                <!--<android.support.v7.widget.AppCompatTextView-->
-                    <!--android:id="@+id/txtView_Subtitle"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="30dp"-->
-                    <!--android:maxLines="2"-->
-                    <!--android:layout_marginTop="4dp"-->
-                    <!--android:layout_below="@id/txtView_Title"-->
-                    <!--android:text="@string/aadhaar_subtitle"-->
-                    <!--app:autoSizeTextType="uniform"-->
-                    <!--/>-->
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txtView_Subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@id/txtView_Title"
+                    android:textSize="@dimen/textView_passport_Subtitle_size"
+                    android:text="@string/aadhaar_subtitle"
+                    app:autoSizeTextType="uniform"
+                    />
 
             </RelativeLayout>
 
         </LinearLayout>
 
     </android.support.v7.widget.CardView>
-
 </LinearLayout>
+

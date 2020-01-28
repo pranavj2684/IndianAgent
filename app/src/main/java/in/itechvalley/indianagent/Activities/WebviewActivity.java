@@ -1,4 +1,4 @@
-package in.itechvalley.indianagent;
+package in.itechvalley.indianagent.Activities;
 
 import android.graphics.Color;
 import android.graphics.PorterDuff;
@@ -18,6 +18,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import in.itechvalley.indianagent.Constants.Constants;
+import in.itechvalley.indianagent.R;
 
 public class WebviewActivity extends AppCompatActivity
 {

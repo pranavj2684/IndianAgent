@@ -90,12 +90,13 @@
         android:layout_marginTop="10dp"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
     <Button
+        android:id="@+id/btnPanAadhaar"
         android:layout_marginRight="10dp"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#E91E63"
-        android:text="Proceed to Website"
+        android:text="Proceed to Link Aadhaar"
         android:textColor="@android:color/white"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
 </LinearLayout>

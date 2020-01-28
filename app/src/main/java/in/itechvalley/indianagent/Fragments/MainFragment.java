@@ -3,16 +3,17 @@ package in.itechvalley.indianagent.Fragments;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
+import in.itechvalley.indianagent.Activities.MainActivity;
 import in.itechvalley.indianagent.Adapter.RecyclerAdapter;
 import in.itechvalley.indianagent.Model.GetterSetter;
 import in.itechvalley.indianagent.R;
@@ -26,15 +27,26 @@ public class MainFragment extends Fragment
     private ArrayList<GetterSetter> servicesList = new ArrayList<>();
     private RecyclerView recyclerView;
 
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState)
     {
+        ((MainActivity)getActivity())
+                .setActionBarTweaks(getString(R.string.app_name),
+                        ContextCompat.getColor(getContext(),R.color.colorPrimary),
+                        ContextCompat.getColor(getContext(),R.color.colorPrimaryDark));
+
         View rootView = inflater.inflate(R.layout.main_fragment, container, false);
 
-        ((Toolbar) getActivity().findViewById(R.id.toolbar)).setTitle("Indian Agent");
-
-        recyclerView = (RecyclerView) rootView.findViewById(R.id.recyclerView);
+        recyclerView = rootView.findViewById(R.id.recyclerView);
         servicesList.clear();
         prepareData();
 

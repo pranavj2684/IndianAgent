@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/policy_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/policy_heading"
+        android:textSize="40sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        />
+    <TextView
+        android:id="@+id/policy_para1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/para_1"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="12dp"
+        />
+    <TextView
+        android:id="@+id/policy_para2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/para_2"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="12dp"
+        />
+    <TextView
+        android:id="@+id/policy_para3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/para_3"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="12dp"
+        />
+
+
+</LinearLayout>
+</ScrollView>

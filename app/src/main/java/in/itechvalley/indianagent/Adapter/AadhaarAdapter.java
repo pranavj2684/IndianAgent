@@ -1,12 +1,8 @@
 package in.itechvalley.indianagent.Adapter;
 
-import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -19,11 +15,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import in.itechvalley.indianagent.Constants.Constants;
-import in.itechvalley.indianagent.Fragments.AadhaarFragment;
 import in.itechvalley.indianagent.Model.GetterSetter;
-import in.itechvalley.indianagent.QRCodeScanning;
+import in.itechvalley.indianagent.Activities.QRCodeScanning;
 import in.itechvalley.indianagent.R;
-import in.itechvalley.indianagent.WebviewActivity;
+import in.itechvalley.indianagent.Activities.WebviewActivity;
 
 /**
  * Created by pranav on 29/07/2017.
@@ -106,7 +101,7 @@ public class AadhaarAdapter extends RecyclerView.Adapter<AadhaarAdapter.MyViewHo
                     }
                     case 2:
                     {
-                        startWebActivity("https://resident.uidai.net.in/check-aadhaar-status",
+                        startWebActivity("https://resident.uidai.gov.in/check-aadhaar",
                                 "Check Aadhaar Status");
 
                         break;

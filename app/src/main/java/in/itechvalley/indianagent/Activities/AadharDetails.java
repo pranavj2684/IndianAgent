@@ -1,4 +1,4 @@
-package in.itechvalley.indianagent;
+package in.itechvalley.indianagent.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import in.itechvalley.indianagent.Constants.DataAttributes;
+import in.itechvalley.indianagent.R;
 
 public class AadharDetails extends AppCompatActivity {
     

@@ -2,23 +2,24 @@ package in.itechvalley.indianagent.Fragments;
 
 
 import android.annotation.SuppressLint;
+import android.content.res.Configuration;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SimpleItemAnimator;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewTreeObserver;
 
 import java.util.ArrayList;
 
-import in.itechvalley.indianagent.Adapter.AadhaarAdapter;
+import in.itechvalley.indianagent.Activities.MainActivity;
 import in.itechvalley.indianagent.Adapter.RailwayAdapter;
-import in.itechvalley.indianagent.MainActivity;
 import in.itechvalley.indianagent.Model.GetterSetter;
 import in.itechvalley.indianagent.R;
 
@@ -28,8 +29,9 @@ import in.itechvalley.indianagent.R;
 public class RailwayFragment extends Fragment
 {
     private ArrayList<GetterSetter> servicesList = new ArrayList<>();
-    private RecyclerView recyclerView;
+    public RecyclerView recyclerView;
     private AppCompatActivity appCompatActivity;
+
 
     public RailwayFragment()
     {
@@ -45,6 +47,11 @@ public class RailwayFragment extends Fragment
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
+        ((MainActivity)getActivity())
+                .setActionBarTweaks(getString(R.string.railway_fragment_title),
+                        ContextCompat.getColor(getContext(),R.color.colorPrimary),
+                        ContextCompat.getColor(getContext(),R.color.colorPrimaryDark));
+
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.main_fragment,container,false);
 
@@ -54,7 +61,7 @@ public class RailwayFragment extends Fragment
 
         prepareData();
 
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
+        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(getContext(),3);
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new SimpleItemAnimator()
         {
@@ -157,6 +164,9 @@ public class RailwayFragment extends Fragment
         servicesList.add(getterSetter);
 
         getterSetter = new GetterSetter(R.drawable.message, getString(R.string.sms_service), getString(R.string.sms_service_subtitle), 7);
+        servicesList.add(getterSetter);
+
+        getterSetter = new GetterSetter(R.drawable.meteor,getString(R.string.tatkal_service),getString(R.string.tatkal_service_subtitle),8);
         servicesList.add(getterSetter);
     }
 

@@ -8,7 +8,11 @@ public class Constants {
     public static final String KEY_URL = "URL";
     public static final String KEY_HEADING = "HEADING";
     public static final String BSNL_LANDLINE_PAY_URL = "https://portal2.bsnl.in/myportal/cfa.do";
+    public static final String BSNL_RECHARGE = "https://portal2.bsnl.in/myportal/quickrecharge.do";
+    public static final String BSNL_WEBSITE = "http://www.bsnl.co.in/";
     public static final String BSNL_LANDLINE_PAY = "BSNL Landline Payment";
+    public static final String BSNL_RECHARGE_TITLE = "BSNL Recharge";
+    public static final String BSNL_ALL_OPTIONS = "Visit All Options";
     public static final String DRIVING_LICENCE_WEB_URL = "https://parivahan.gov.in/sarathiservice/sarathiHomePublic.do";
     public static final String DRIVING_LICENCE = "Driving Licence";
 

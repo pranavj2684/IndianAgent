@@ -8,4 +8,6 @@
     <dimen name="text_small">18dp</dimen>
     <dimen name="text_medium">20dp</dimen>
     <dimen name="text_large">24dp</dimen>
+    <dimen name="txtView_rail_Title_txtSize">14sp</dimen>
+    <dimen name="txtView_Title_size">14sp</dimen>
 </resources>

@@ -1,31 +1,35 @@
 package in.itechvalley.indianagent.Adapter;
 
-import android.app.Activity;
 import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Rect;
 import android.net.Uri;
 import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
+import android.transition.Explode;
+import android.transition.Transition;
+import android.transition.TransitionManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
 import in.itechvalley.indianagent.Constants.Constants;
+import in.itechvalley.indianagent.Fragments.RailwayFragment;
 import in.itechvalley.indianagent.Model.GetterSetter;
 import in.itechvalley.indianagent.R;
-import in.itechvalley.indianagent.WebviewActivity;
+import in.itechvalley.indianagent.Activities.WebviewActivity;
 
 /**
  * Created by pranav on 29/07/2017.
@@ -48,15 +52,15 @@ public class RailwayAdapter extends RecyclerView.Adapter<RailwayAdapter.MyViewHo
     {
         public TextView Title, Subtitle;
         public ImageView img;
-        public CardView cardView;
+        public LinearLayout Llayout;
 
         public MyViewHolder(View view)
         {
             super(view);
             Title = (TextView) view.findViewById(R.id.txtView_rail_Title);
-            Subtitle = (TextView) view.findViewById(R.id.txtView_rail_Subtitle);
+//            Subtitle = (TextView) view.findViewById(R.id.txtView_rail_Subtitle);
             img = (ImageView) view.findViewById(R.id.upperImageView);
-            cardView = (CardView) view.findViewById(R.id.cardRailway);
+            Llayout = (LinearLayout) view.findViewById(R.id.cardRailway);
         }
 
     }
@@ -72,7 +76,7 @@ public class RailwayAdapter extends RecyclerView.Adapter<RailwayAdapter.MyViewHo
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
     {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_railway, parent, false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_railway_grid, parent, false);
         intent = new Intent(context, WebviewActivity.class);
 
         return new MyViewHolder(v);
@@ -86,11 +90,12 @@ public class RailwayAdapter extends RecyclerView.Adapter<RailwayAdapter.MyViewHo
         GetterSetter getterSetter = services.get(position);
 
         holder.Title.setText(getterSetter.getTitle());
-        holder.Subtitle.setText(getterSetter.getSubtitle());
+//        holder.Subtitle.setText(getterSetter.getSubtitle());
         holder.img.setImageResource(getterSetter.getImgResourceId());
 
-        holder.cardView.setOnClickListener(new View.OnClickListener()
+        holder.Llayout.setOnClickListener(new View.OnClickListener()
         {
+            @RequiresApi(api = Build.VERSION_CODES.KITKAT)
             @Override
             public void onClick(View v)
             {
@@ -98,6 +103,7 @@ public class RailwayAdapter extends RecyclerView.Adapter<RailwayAdapter.MyViewHo
                 {
                     case 0:
                     {
+                        
                         startWebActivity(
                                 "http://www.indianrail.gov.in/enquiry/PnrEnquiry.html",
                                 "Check PNR Status");
@@ -152,6 +158,15 @@ public class RailwayAdapter extends RecyclerView.Adapter<RailwayAdapter.MyViewHo
                         Intent intent = new Intent(context, WebviewActivity.class);
                         intent.putExtra(Constants.KEY_URL, "http://www.indianrail.gov.in/139.html");
                         intent.putExtra(Constants.KEY_HEADING, "SMS Services");
+                        context.startActivity(intent);
+                        break;
+                    }
+                    case 8:
+
+                    {
+                        Intent intent = new Intent(context,WebviewActivity.class);
+                        intent.putExtra(Constants.KEY_URL,"http://www.indianrail.gov.in/tatkal_Scheme.html");
+                        intent.putExtra(Constants.KEY_HEADING,"Tatkal Service");
                         context.startActivity(intent);
                         break;
                     }

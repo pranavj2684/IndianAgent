@@ -10,7 +10,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/cardDownloadAadhaar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="110dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
@@ -54,19 +54,20 @@
                         android:id="@+id/txtView_Title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
+                        android:gravity="start"
                         android:maxLines="1"
                         android:text="@string/download_aadhaar_card"
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textSize="@dimen/textViewTitle_size"
                         android:textColor="#88000000" />
 
                     <android.support.v7.widget.AppCompatTextView
                         android:id="@+id/txtView_Subtitle"
                         android:layout_width="match_parent"
-                        android:layout_height="30dp"
+                        android:layout_height="wrap_content"
                         android:maxLines="2"
                         android:layout_marginTop="4dp"
                         android:layout_below="@id/txtView_Title"
+                        android:textSize="@dimen/textView_Subtitle_size"
                         android:text="@string/aadhaar_subtitle"
                         app:autoSizeTextType="uniform"
                         />
@@ -76,6 +77,7 @@
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
+</LinearLayout>
 
     <!--<android.support.v7.widget.CardView-->
         <!--android:id="@+id/cardApplyAadhaar"-->
@@ -281,5 +283,4 @@
 
 
 
-    </LinearLayout>
 
